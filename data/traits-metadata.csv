@@ -1,0 +1,47 @@
+Fields for traits data export table,,
+Field,column type,description
+site_code,varchar,"code in the form of ""shorthand.country"" e.g., cdcr.us, kiny.au, frue.ch"
+year,year,year leaves collected for trait observation
+block,int,block number
+plot,int,plot number
+trt,varchar,applied treatment combination
+Family,varchar,Taxonomic Family (names follow IPNI)
+Taxon,varchar,"Scientific name as binomial (Genus species) plus any infraspecific designation (variety, subspecies). Names resolved following theplantlist.org"
+num_leaves,int,number of leaves per plant taxon collected in the plot indicated
+leaf_pct_N,double,"percent by mass nitrogen, calculated by LECO combustion"
+leaf_pct_C,double,"percent by mass carbon, calculated by LECO combustion"
+leaf_C13_delta_PDB,double,Sercon 20-22 Isotope Ratio Mass Spectrometer
+leaf_area_mm2,double,Leaf scanner various site specific and analyses using ImageJ
+leaf_dry_mass_g,double,dried at 70 C for 48 hours and then weighed
+leaf_ppm_P,double,Agilent 8800 Laser Ablation Inductively Coupled Plasma Mass Spectrometer (LA-ICP-MS)
+leaf_ppm_B,double,Agilent 8800 Laser Ablation Inductively Coupled Plasma Mass Spectrometer (LA-ICP-MS)
+leaf_ppm_Na,double,Agilent 8800 Laser Ablation Inductively Coupled Plasma Mass Spectrometer (LA-ICP-MS)
+leaf_ppm_Ca,double,Agilent 8800 Laser Ablation Inductively Coupled Plasma Mass Spectrometer (LA-ICP-MS)
+leaf_ppm_Fe,double,Agilent 8800 Laser Ablation Inductively Coupled Plasma Mass Spectrometer (LA-ICP-MS)
+leaf_ppm_K,double,Agilent 8800 Laser Ablation Inductively Coupled Plasma Mass Spectrometer (LA-ICP-MS)
+leaf_ppm_Mg,double,Agilent 8800 Laser Ablation Inductively Coupled Plasma Mass Spectrometer (LA-ICP-MS)
+leaf_ppm_Mn,double,Agilent 8800 Laser Ablation Inductively Coupled Plasma Mass Spectrometer (LA-ICP-MS)
+leaf_ppm_Cu,double,Agilent 8800 Laser Ablation Inductively Coupled Plasma Mass Spectrometer (LA-ICP-MS)
+leaf_ppm_Zn,double,Agilent 8800 Laser Ablation Inductively Coupled Plasma Mass Spectrometer (LA-ICP-MS)
+leaf_ppm_Sr,double,Agilent 8800 Laser Ablation Inductively Coupled Plasma Mass Spectrometer (LA-ICP-MS)
+leaf_ppm_Pb,double,Agilent 8800 Laser Ablation Inductively Coupled Plasma Mass Spectrometer (LA-ICP-MS)
+leaf_ppm_Mo,double,Agilent 8800 Laser Ablation Inductively Coupled Plasma Mass Spectrometer (LA-ICP-MS)
+SLA_v2,double,"specific leaf area in mm^2 / g, calculated by dividing leaf area/leaf dry mass"
+Ntrt,int,"Nitrogen treatment : 0: no, 1 yes"
+Ptrt,int,"Phosphorus treatment : 0: no, 1 yes"
+Ktrt,int,"Potassium treatment : 0: no, 1 yes"
+Nfix,int,"Ability to form symbiosis with nitrogen fixing bacteria : 0: no, 1 yes"
+first_nutrient_year,int,First year when treatments started
+site_name,varchar(45),Expanded site name
+continent,varchar(45),site continent
+region,varchar(45),region 
+habitat,varchar(45),standard habitat descriptions
+lifespan,varchar(45),"life history (Perennial, biennial, annual, indeterminate)"
+lifeform,varchar(45),"life form (grass, forb, vine, tree, etc.)"
+photosynthetic_pathway,varchar(45),photosynthetic pathway (C3 or C4 or CAM)
+max_cover,double,estimated cover of taxon at the time of trait measurement
+live_mass,double,live biomass per plot (g/m2)
+precip.mean,double,mean annual precipitation (mm/year)
+tmp,double,mean annual gowing season temperature (Tg)
+par2_gs,double,mean annual growing season PAR
+aridity,double,moisture index MI
